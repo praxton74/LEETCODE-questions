@@ -1,0 +1,9 @@
+int maxSubArray(int* nums, int numsSize){
+    int sum = nums[0];
+    int curr = sum;
+    for(int i=1; i<numsSize; i++){
+        curr = fmax(curr+nums[i], nums[i]);
+        sum = fmax(curr, sum);
+    }
+    return sum;
+}
