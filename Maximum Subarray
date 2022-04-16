@@ -7,3 +7,6 @@ int maxSubArray(int* nums, int numsSize){
     }
     return sum;
 }
+
+
+link ->  https://leetcode.com/problems/maximum-subarray/
